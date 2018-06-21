@@ -1,0 +1,20 @@
+{
+  "name": "paginas_web_js",
+  "version": "1.0.0",
+  "description": "Parte del JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanma62/paginas_web_js.git"
+  },
+  "keywords": ["JavaScript"],
+  "author": "Juan Manuel Salazar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanma62/paginas_web_js/issues"
+  },
+  "homepage": "https://github.com/juanma62/paginas_web_js#readme"
+}
