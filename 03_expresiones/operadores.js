@@ -11,12 +11,23 @@ function asignaciones() {
 
 asignaciones()
 
-function isPar(par) {
+/* function isPar(par) {
     let isPar = true
-    if(par %2 != 0) {
+    if (typeof par != 'number' || (par % 2)) {
         isPar = false
     }
     return isPar
+} */
+
+function isPar(par) {
+    return (typeof par == 'number' && par % 2 == 0) ? true : false
 }
 
-console.log(isPar(25))
+console.log('25 es par?', isPar(25))
+console.log('24 es par?', isPar(24))
+console.log('0 es par?', isPar(0))
+console.log('Pepe es par?', isPar('Pepe'))
+console.log('"" es par?', isPar(''))
+console.log(' es par?', isPar())
+console.log('True es par?', isPar(true))
+console.log('False es par?', isPar(false))
