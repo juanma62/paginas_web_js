@@ -4,7 +4,7 @@
 
 
 function despertador(dia){
-    let hora = '12,00'
+    let hora
     switch (dia) {
         case 'L':
             hora = '7:00'
@@ -27,29 +27,26 @@ function despertador(dia){
             dia = 'Viernes'
             break;
         case 'S' :
-            hora = '12:00'
-            dia = 'Sábado'
-            break;
         case 'D':
             hora = '12:00'
-            dia = 'Domingo'  
+            dia = 'Fin de semana'  
             break;
         default:
             hora = '0:00'
             día = "Error de día"
     }
-    return `${hora} comenza el ${dia}`
+    return `${hora} y comienza el ${dia}`
 }
 
 function probar() {
     let dia = 'L'
-    console.log(`Si tu dia es ${dia}`, despertador(dia))
+    console.log(`Si tu dia es ${dia}, te despiertas a las`, despertador(dia))
     dia = 'M'
-    console.log(`Si tu dia es ${dia}`, despertador(dia))
+    console.log(`Si tu dia es ${dia}, te despiertas a las`, despertador(dia))
     dia = 'S'
-    console.log(`Si tu dia es ${dia}`, despertador(dia))
+    console.log(`Si tu dia es ${dia}, te despiertas a las`, despertador(dia))
     dia = 'D'
-    console.log(`Si tu dia es ${dia}`, despertador(dia))
+    console.log(`Si tu dia es ${dia}, te despiertas a las`, despertador(dia))
 }
 
 probar()
