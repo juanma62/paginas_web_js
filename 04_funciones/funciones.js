@@ -27,6 +27,7 @@ function calcularArea(figura, datos) {
             resultado = datos.r * datos.r * Math.PI
             break; 
         default:
+        throw('La operación no es válida')
             break;
     }
     return resultado.toFixed(2)
@@ -48,4 +49,4 @@ function probrar () {
 
 // Invocar una función
 
-probrar ()
+calcularArea ()
