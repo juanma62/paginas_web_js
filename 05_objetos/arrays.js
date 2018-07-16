@@ -5,14 +5,17 @@ let aDatos = [1,2]
 console.log(aDatos + [3,4])
 console.log(aDatos.concat([3,4])) */
 
-let aNombres = ['Pepe', 'Luis', 'Antonio', 'Rosa', 'Arancha']
+/* let aNombres = ['Pepe', 'Luis', 'Antonio', 'Rosa', 'Arancha']
 aNombresOriginal = aNombres.join('|').split('|')
 aNombresOriginalNuevo = aNombres.slice()
 aNombres.reverse()
 aNombres.sort()
 console.log(aNombres)
 console.log(aNombresOriginal)
-console.log(aNombresOriginalNuevo)
+console.log(aNombresOriginalNuevo) */
 
 aNombres = ['Pepe', 'Luis', 'Antonio', 'Rosa', 'Arancha']
-console.log(aNombres.slice(1,4))
+//console.log(aNombres.slice(1,4))
+aNombres.push('Lorenzo', 'Eduardo')
+aNombres.push(['Juan', 'María'])
+console.log(aNombres)
