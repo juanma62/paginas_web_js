@@ -1,40 +1,3 @@
-let factura = {
-    empresa : {
-        nombre : '',
-        direccion : '',
-        telefono : '',
-        nif : ''
-    },
-    cliente  : {
-        nombre : '',
-        direccion : '',
-        telefono : '',
-        nif : ''
-    },
-    elementos : [
-        {descripcion : '',
-        precio : '',
-        cantidad : ''},
-        {descripcion : '',
-        precio : '',
-        cantidad : ''},
-        {descripcion : '',
-        precio : '',
-        cantidad : ''}
-    ],
-    importeToral : '',
-    tipoIva : '',
-    formaPago : ''
-}
-
-factura.calcularImporteTotal = function(){
-    // Actualiza el valor de la propiedad correspondiente
-}
-
-factura.mostrar = function(){
-    // Muestra por pantalla el importe total
-}
-
 let factura1 = {
     empresa : {
         nombre : 'J&M Artes gráficas',
@@ -47,7 +10,7 @@ let factura1 = {
         direccion : 'Calle del Pez, 13',
         telefono : '456456456',
         nif : '33333333F'
-    },
+    }, 
     elementos : [
         {descripcion : 'La isla del tesoro',
         precio : 30,
