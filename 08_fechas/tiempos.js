@@ -1,1 +1,1 @@
-import {Moment} from './node_modules/moment/sr'
+import {Moment} from './node_modules/moment/moment.js'

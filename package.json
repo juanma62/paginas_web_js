@@ -10,7 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/juanma62/paginas_web_js.git"
   },
-  "keywords": ["JavaScript"],
+  "keywords": [
+    "JavaScript"
+  ],
   "author": "Juan Manuel Salazar",
   "license": "ISC",
   "bugs": {
