@@ -8,7 +8,13 @@ if (localStorage.numVisitas) {
     localStorage.numVisitas = 1
     numVisitas = localStorage.numVisitas
 }
-    console.log('Visita número', localStorage.numVisitas)
+
+console.log('Visita número', localStorage.numVisitas)
+
+let x = navigator.geolocation.getCurrentPosition(
+    (data) => {console.log(data)},
+    (error) => {console.log(error)}
+)
 
 let title = document.querySelector('title')
 
