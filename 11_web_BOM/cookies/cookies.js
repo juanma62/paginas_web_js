@@ -1,3 +1,5 @@
+//import * as x from './node_modules/js-cookie/src/js.cookie.js'
+
 let numVisitas =  Cookies.get('NumVisitas')
 console.log(numVisitas)
 if (numVisitas) {
@@ -9,3 +11,7 @@ if (numVisitas) {
     // No existe la cookie NumVisitas
     Cookies.set('NumVisitas', 1, { expires: 7 })
 }
+
+let title = document.querySelector('title')
+
+console.log(title)
