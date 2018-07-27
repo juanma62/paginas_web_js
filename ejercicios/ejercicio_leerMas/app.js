@@ -1,12 +1,22 @@
 class App{
     constructor(){
-        this.leer = document.querySelector('.ocultar')
-        this.textoMas = document.querySelector('.ocultar')
-        
-        this.leer = addEventListener('click', this.leer(this))
+        this.abtnMas = document.querySelectorAll('.mas')
+        this.abtnMas.forEach(
+            (btn) => {btn.addEventListener('click', this.mostrar.bind(this))}
+        )  
     }
+
+    mostrar(oE) {
+        let nodoBtn = oE.target
+        let nodoTexto = nodoBtn.previousElementSibling
+        nodoTexto.classList.toggle('hide') // Lo dejamos en el estado primero
+        if(nodoTexto.classList.contains('hide')) { // cambiamos con el if el texto
+            nodoBtn.textContent = 'Ver mas'
+        } else {
+            nodoBtn.innerHTML = 'Ocultar texto'
+        }
+    }
+
 }
 
 document.addEventListener("DOMContentLoaded",() => {new App()})
-
-this.parrafoBoton.classList.remove('boton')
