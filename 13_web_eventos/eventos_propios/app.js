@@ -2,12 +2,17 @@ function main(){
     document.querySelector('#btnPulsar')
     .addEventListener('click', pulsar)
 
-    document.querySelector('#output')
+    document.querySelector('main')
     .addEventListener('escribir', escribir)
+
+    /* document.querySelector('#output')
+    .addEventListener('escribir', escribir) */
 
     function pulsar(oEv){
         oEv.target.dispatchEvent(
-            new Event('escribir')
+            new Event('escribir',{
+                'bubbles' : true
+            })
         )
     }
 

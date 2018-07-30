@@ -22,11 +22,21 @@ function main(){
         //div.addEventListener('mouseout', hover)
         div.onmouseout = hover
     })
+    document.querySelector('footer a')
+        .addEventListener('click', navegar)
     function hover(oE){
         if(oE.type == 'mouseover'){
             this.style.backgroundColor = "pink"
         } else {
             this.style.backgroundColor = "brown"
+        }
+    }
+    function navegar (oEv) {
+        oEv.preventDefault()
+        console.log('Navegando');
+        let res = confirm("Estas seguro")
+        if (res) {
+          location.assign('https://www.google.com')
         }
     }
 }

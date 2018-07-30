@@ -1,0 +1,12 @@
+body {
+    margin: 2rem;
+}
+
+.btnTop{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+.oculto{
+    display: none;
+}
