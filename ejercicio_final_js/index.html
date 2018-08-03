@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Author: Juan Manuel Salazar, Generator: Visual Studio Code, Subjetc: Página de referencia de la historia en la Comunidad de Madrid">
+    <title>Comunidad de Madrid</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <script src="./js/funcion_mostrar.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/flecha.js"></script>
+    <link rel="stylesheet" href="./css/normalizar.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header id="cabecera">
+        <h1>Madrid
+            <span class="subtituloh1">claro que si!</span>
+        </h1>
+        <nav class="menu-cabecera-movil">
+            <a class="fas fa-bars" href="#menu-pie"></a>
+        </nav>
+        <nav class="menu-general">
+            <ul>
+                <li><a href="#geografia">Geografía</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#economia">Economía</a></li>
+                <li><a href="./about.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <span class="irarriba"><img src="./assets/flecha.png" width="40" alt="Flecha"></span>
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <img src="./assets/inicio.jpg" alt="Vista general de Madrid" title="Una imagen de la catedral de la ALmudena de Madrid">
+            <div class="wrapper-section">
+                <h3>Un paseo por Madrid y los pueblos más importantes</h3>
+            </div>
+            <div class="wrapper-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Madrid centro</th>
+                            <th>Madrid norte</th>
+                            <th>Madrid sur</th>                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Principales pueblos</th>
+                            <td>Móstoles</td>
+                            <td>Arganda</td>
+                            <td>Torrelodones</td>
+                        </tr>
+                        <tr>
+                            <th>Número de habitantes (hombres)</th>
+                            <td>102.314</td>
+                            <td>25.056</td>
+                            <td>10.020</td>
+                        </tr>
+                        <tr>
+                            <th>Número de habitantes (mujeres)</th>
+                            <td>103.300</td>
+                            <td>29.200</td>
+                            <td>13.103</td>
+                        </tr>
+                        <tr>
+                            <th>Totales</th>
+                            <td>205.614</td>
+                            <td>54.256</td>
+                            <td>23.123</td>
+                        </tr>                    
+                    </tbody>
+                    <tfoot>        
+                    </tfoot>
+                </table>
+            </div>
+            <div id="inicio-muestra" class="wrapper-oculto-inicio">
+                <p>El buen tiempo, la belleza arquitectónica o la calidad de los museos son algunas de las primeras impresiones que los turistas tienen cuando llegan a Madrid. Visitantes de todo el mundo se animan a visitar la capital; uno de los puntos turísticos de España con mayor número de viajeros al mes. Sin embargo, no todos tienen buenas opiniones. Algunos aspectos como el bajo nivel de inglés o la escasez de edificios emblemáticos –en comparación con otras capitales europeas– provoca que muchos de estos turistas no se vayan con buen sabor de boca.</p>
+                <p>Pero no solo los jóvenes se llevan buenas impresiones de Madrid. Las familias también disfrutan de cada uno de sus rincones. Así lo piensa un matrimonio asiático que viaja con su hija desde una región impronunciable de China y que han planeado recorrer España durante dos semanas. Aunque tienen programado un viaje por varios puntos del país, el padre de familia reconoce que la arquitectura de los edificios madrileños les ha conquistado tanto que no quieren abandonar la ciudad. Madre e hija, que observan con curiosidad a las personas que pasan alrededor, asienten sin entender mucho el inglés.</p> 
+            </div>
+            <a class="leer-mas" onclick="cambiarTexto(this); mostrar('inicio-muestra'); columna(columnas)">Mostrar</a>
+        </section>
+        <section id="geografia">
+            <h2>Geografía</h2>
+            <div class="wrapper-geografia">
+                <div class="wrapper-imagen">
+                    <img class="imagen" src="./assets/geografia.jpg" alt="Mapa de Madrid" title="Una visión de la geografía de Madrid">
+                </div>
+                <div>
+                    <div class="wrapper-section">
+                        <p>Comarcas de la <strong>Comunidad de Madrid</strong> según la Guía de Turismo Rural y Activo (los municipios del área metropolitana no se incluyen en ninguna).</p>
+                        <p>La Comunidad de Madrid es una comunidad autónoma española uniprovincial. En el <cite>artículo 75 la Ley 2/2003, de 11 de marzo, de Administración Local de la Comunidad de Madrid (BOCM de 18 de marzo de 2003),</cite> se prevé la creación de comarcas:</p>
+                        <p>Según dispone el artículo 3.3 de la Ley Orgánica 3/1983, de 25 de febrero, de Estatuto de Autonomía de la Comunidad de Madrid, por Ley de la Asamblea de Madrid se podrán crear Comarcas mediante la agrupación de Municipios limítrofes cuyas características determinen intereses comunes precisados de una gestión propia o demanden la prestación de servicios en dicho ámbito en los términos previstos en el artículo 42 de la Ley 7/1985, de 2 de abril, reguladora de las Bases de Régimen Local.</p>
+                    </div>
+                    <div id="geografia-muestra" class="wrapper-oculto-inicio">
+                        <p>Sin embargo, la Asamblea de Madrid no aprobó ninguna ley para la formación de comarcas.</p>
+                        <p>No obstante, con diversos propósitos (agrícolas, turísticos...) diversos organismos de la administración autonómica han definido informalmente comarcas:</p>
+                        <p><strong>La Guía de Turismo Rural y Activo,</strong> editada por la <em>Dirección General de Turismo </em> (Consejería de Cultura y Turismo) <q>define ocho comarcas</q> (dejando fuera de tales comarcas los municipios interiores, pertenecientes al Área Metropolitana de Madrid o al Corredor del Henares.</p>
+                        <blockquote>El Libro Blanco de la Política Agraria y el Desarrollo Rural, editado por la Dirección General de Agricultura y Desarrollo Rural (Consejería de Economía e Innovación Tecnológica) define seis comarcas agrícolas que cubren todo el territorio de la <em>Comunidad.</em> </blockquote>
+                        <p>Estas clasificaciones, no oficiales, conviven con comarcas tradicionales o con otras agrupaciones más modernas (como el Corredor del Henares), también sin regulación oficial.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="leer-mas" onclick="cambiarTexto(this); mostrar('geografia-muestra')">Mostrar</a>
+        </section>
+        <section id="historia">
+            <h2>Historia</h2>
+            <div class="wrapper-geografia">
+                <div class="wrapper-imagen">
+                    <img src="./assets/historia.jpg" alt="Historia de Madrid" title="Una imagen del Madrid histórico">
+                </div>
+                <div>
+                    <div class="wrapper-section">
+                        <p>La historia de Madrid (España) está marcada por el establecimiento en ella de la corte real (junio de 1561) y, con la consolidación del país, su transformación en la capital del reino. Sin embargo, antes de esto el área de la actual ciudad ya había sido poblada con el establecimiento de comunidades más o menos relevantes. La aparición de Madrid en la historia data del siglo IX, cuando el emir Mohamed I (852-886) levantó una fortaleza en el lugar ocupado actualmente por el Palacio Real.</p>
+                    </div>
+                    <div id="historia-muestra" class="wrapper-oculto-inicio">
+                        <p>La principal actividad económica de la ciudad son los servicios, que suponen un 85% del total. En concreto los servicios financieros suponen 31,91% del total, el comercio un 31,84%, dentro del que se incluye el turismo (en torno al 10%) y el resto de servicios con un 21,34%. A las tradicionales funciones administrativas, por albergar la Administración central del Estado, y financieras (Madrid es la sede de gran cantidad de empresas que desarrollan su actividad en toda España y acoge la mitad del capital financiero nacional), se han sumado las relacionadas con el transporte o con la pujanza del aeropuerto de Barajas. De hecho los mayores centros de empleo y aportación al PIB de la ciudad de Madrid son el propio aeropuerto e Ifema, el recinto ferial de la ciudad. Por su actividad en el sector aeroespacial, Madrid pertenece a la Comunidad de Ciudades Ariane.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="leer-mas" onclick="cambiarTexto(this); mostrar('historia-muestra')">Mostrar</a>
+        </section>
+        <section id="economia">
+            <h2>Economía</h2>
+            <div class="wrapper-geografia">
+                <div class="wrapper-imagen">
+                    <img src="./assets/economia.jpg" alt="La economía de la Comunidad de Madrid" title="La bolsa, motor económico de la Comunidad">
+                </div>
+                <div>
+                    <div class="wrapper-section">
+                        <p>La economía de la ciudad de Madrid, con un Producto Interior Bruto de 262.335.000 USD en 2016,es la mayor entre las ciudades españolas y la cuarta entre las europeas. El PIB per cápita se situó en 39.288 USD en el año 2016.</p>
+                        <p>El PIB ha venido creciendo en los últimos años a un ritmo superior que el resto de España.</p>
+                    </div>
+                    <div id="economia-muestra" class="wrapper-oculto-inicio">
+                        <h4>Áreas económicas</h4>
+                        <p>La principal actividad económica de la ciudad son los servicios, que suponen un 85% del total. En concreto los servicios financieros suponen 31,91% del total, el comercio un 31,84%, dentro del que se incluye el turismo (en torno al 10%) y el resto de servicios con un 21,34%. A las tradicionales funciones administrativas, por albergar la Administración central del Estado, y financieras (Madrid es la sede de gran cantidad de empresas que desarrollan su actividad en toda España y acoge la mitad del capital financiero nacional), se han sumado las relacionadas con el transporte o con la pujanza del aeropuerto de Barajas. De hecho los mayores centros de empleo y aportación al PIB de la ciudad de Madrid son el propio aeropuerto e Ifema, el recinto ferial de la ciudad. Por su actividad en el sector aeroespacial, Madrid pertenece a la Comunidad de Ciudades Ariane.</p>
+                        <p>La industria en la ciudad de Madrid, pierde peso poco a poco, para trasladarse a los municipios del área metropolitana, especialmente del arco Sur-sudeste. Aun así la industria sigue suponiendo un porcentaje relevante en el presupuesto de la ciudad.</p>
+                        <p>La construcción es el sector de más crecimiento de Madrid,​ estimado en un 8,2% en el año 2005. La tendencia muestra un aumento de la construcción no residencial, empujada por la ligera desaceleración del incremento del precio de la vivienda en 2005.</p>
+                        <p>Además, Madrid se ha convertido en los últimos años en una de las ciudades más visitadas de Europa, sólo detrás de París, Londres y Roma y la primera de España. En la ciudad se desarrollan gran cantidad de actividades de carácter turístico, lúdico y cultural.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="leer-mas" onclick="cambiarTexto(this); mostrar('economia-muestra')">Mostrar</a>
+        </section>
+        <section id="nosotros">
+            <a href="./about.html">
+                <h2>Nosotros</h2>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <nav id="menu-pie" >
+            <ul class="menu-pie">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#geografia">Geografía</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#economia">Economía</a></li>
+                <li><a href="./about.html">Nosotros</a></li>
+            </ul>
+        </nav>
+        <address>           
+            <div id="hcard-Juanma-Salazar-Manuel" class="vcard">
+                <div class="org">J&amp;M Artes Gráficas</div>
+                <span class="fn n">
+                    <span class="given-name">Juan Manuel</span>
+                    <span class="additional-name">Salazar</span>
+                    <span class="family-name">Manuel</span>
+                     · 
+                </span>
+                    <a class="email" href="mailto:jsalazarmanuel@yahoo.es">jsalazarmanuel@yahoo.es</a>
+                <div class="adr">
+                    <span class="street-address">Calle del Pez</span> · 
+                    <span class="locality"> 28095</span> <span class="region">Getafe</span> · <span class="postal-code">Madrid </span><span class="country-name">(España)</span>            
+                </div>
+                <p class="hcard" style="font-size:smaller;">This
+                    <a href="http://microformats.org/wiki/hcard">hCard</a> created with the
+                    <a href="http://microformats.org/code/hcard/creator">hCard creator</a>.
+                </p>
+            </div>
+        </address>
+        <p>&copy; J&amp;M Artes gráficas</p>
+    </footer>
+</body>
+</html>

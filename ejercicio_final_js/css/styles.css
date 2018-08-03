@@ -1,0 +1,373 @@
+/* Estilos generales */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", serif;
+  color: maroon;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+h2 {
+  background-color: brown;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: white;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.doscolumnas {
+  columns: 2;
+}
+
+.doscolumnas p:nth-child(1) {
+  margin-top: 0;
+}
+
+/* Estilos de tabla */
+.wrapper-table {
+  width: 80%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+.wrapper-table table {
+  font-size: 0.8rem;
+}
+.wrapper-table th {
+  background-color: brown;
+  color: white;
+  padding: 1rem;
+}
+.wrapper-table tr:nth-child(even) {
+  background-color: bisque;
+}
+.wrapper-table tr:nth-child(odd) {
+  background-color: aqua;
+}
+.wrapper-table thead th:nth-child(1) {
+  background-color: white;
+}
+.wrapper-table tr, .wrapper-table th {
+  text-align: center;
+}
+
+/* Flecha subir*/
+.irarriba {
+  border-radius: 5px;
+  display: none;
+  width: 30px;
+  height: 30px;
+  background-color: #666;
+  cursor: pointer;
+  float: right;
+  text-align: center;
+  padding: 4px 0 0 0;
+  margin: 10px 0 0 5px;
+  color: #FC0;
+  overflow: hidden;
+  position: fixed;
+  bottom: 5px;
+  left: 0;
+  z-index: 100;
+}
+
+/* Mobile first*/
+header {
+  display: flex;
+  height: 7rem;
+  width: 100%;
+  position: fixed;
+  background-image: url(../assets/cabecera.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  left: 0;
+  top: 0;
+  z-index: 20;
+}
+header::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 7rem;
+  background-color: darkgrey;
+  opacity: 0.9;
+}
+header h1 {
+  font-family: "Neucha", cursive;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 3rem;
+  color: brown;
+  z-index: 20;
+  line-height: 1.2rem;
+}
+header h1 span.subtituloh1 {
+  display: block;
+  font-family: "Gloria Hallelujah", cursive;
+  color: #456094;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  transform: rotate(-10deg);
+  margin-left: 3rem;
+}
+header nav.menu-general {
+  display: none;
+  background-color: #666;
+  z-index: 60;
+  position: fixed;
+  top: 7rem;
+}
+header nav.menu-general ul {
+  padding: 0;
+  margin: 0;
+}
+header nav.menu-general ul :hover {
+  background-color: aqua;
+}
+header nav.menu-general ul li {
+  padding: 1.5rem;
+  background-color: #FC0;
+}
+header nav.menu-cabecera-movil {
+  font-size: 1.5rem;
+  z-index: 20;
+}
+header nav.menu-cabecera-movil a {
+  color: brown;
+}
+
+main {
+  margin-top: 7rem;
+}
+main figure {
+  width: 100%;
+  height: 20rem;
+  background-color: gainsboro;
+}
+main .wrapper-section h3 {
+  text-align: center;
+}
+
+section {
+  clear: both;
+  position: relative;
+}
+section .wrapper-section, section .wrapper-oculto-inicio {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+section a.leer-mas {
+  display: block;
+  background-color: brown;
+  width: 4rem;
+  height: 1.5rem;
+  color: white;
+  margin-right: 5%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  float: right;
+  cursor: pointer;
+}
+section .wrapper-oculto-inicio {
+  display: none;
+}
+
+footer {
+  background-color: antiquewhite;
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 12px;
+}
+footer .menu-pie {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  background-color: rgba(165, 42, 42, 0.8);
+  color: white;
+}
+footer .menu-pie li {
+  text-align: center;
+  padding: 10px 15px;
+}
+footer .menu-pie li a {
+  font-size: 0.9rem;
+  font-variant-caps: all-petite-caps;
+}
+footer .menu-pie li:hover {
+  background-color: maroon;
+}
+footer .hcard {
+  display: none;
+}
+footer p {
+  font-size: 0.6rem;
+}
+footer address {
+  font-style: normal;
+  font-size: 0.8rem;
+}
+
+/* Formato tablets*/
+@media screen and (min-width: 672px) {
+  header {
+    flex-direction: column;
+    height: 9.5rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  header::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 9.5rem;
+    background-color: darkgrey;
+    opacity: 0.9;
+  }
+  header h1 {
+    margin-top: 1rem;
+  }
+  header nav.menu-general {
+    display: block;
+    width: 100%;
+    z-index: 40;
+    margin-top: 2rem;
+    background-color: rgba(69, 96, 148, 0.6);
+    color: white;
+  }
+  header nav.menu-general ul {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header nav.menu-general li {
+    padding: 16px 35px;
+  }
+  header nav.menu-general li:hover {
+    background-color: maroon;
+  }
+  header nav.menu-cabecera-movil {
+    display: none;
+  }
+
+  main {
+    box-shadow: 0px 0px 8px darkgray;
+    overflow: hidden;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
+  }
+
+  section {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  section div.wrapper-imagen {
+    width: 60%;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #nosotros {
+    margin-bottom: 2%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  body header {
+    height: 100vh;
+  }
+  body header::before {
+    height: 100vh;
+  }
+  body header h1 {
+    display: block;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 100vh;
+    font-size: 10rem;
+  }
+  body header h1 .subtituloh1 {
+    float: right;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 4rem;
+    margin-left: -12rem;
+    margin-bottom: 0;
+    transform: rotate(-10deg);
+    font-size: 5rem;
+    z-index: 60;
+  }
+  body main {
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+  body nav.menu-general {
+    top: -32px;
+    position: absolute;
+    background-color: #456094;
+  }
+}
+
+/*# sourceMappingURL=css/styles.css.map */
